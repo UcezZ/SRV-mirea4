@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.list-wrapper {
+    max-width: 800px;
+}
+
+div.item-wrapper {
+    min-width: 400px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 8px;
+    background: linear-gradient(0deg, #d7d7d7 0%, #f7f7f7 100%);
+}
+
+div.item-wrapper>i {
+    font-size: 8pt;
+    color: var(--border-color);
+    position: absolute;
+    margin: 4px;
+}
+
+div.add-wrapper {
+    border-radius: 96px;
+    width: 96px;
+    height: 96px;
+}
+
+div.edit-wrapper {
+    border-radius: 48px;
+    width: 48px;
+    height: 48px;
+}
+
+div.add-wrapper,
+div.edit-wrapper {
+    background-color: var(--accent);
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    color: #FFF;
+    font-size: 8pt;
+}
+
+div.add-wrapper:hover {
+    border-radius: 8px;
+    width: 320px;
+    height: 152px;
+}
+
+div.edit-wrapper:hover {
+    border-radius: 8px;
+    width: 340px;
+    height: 80px;
+    margin: 0 0 4px 4px;
+}
+
+div.add-wrapper button {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+div.add-wrapper button {
+    width: 64px;
+    height: 64px;
+}
+
+div.edit-wrapper button, button.trash {
+    width: 48px;
+    height: 48px;
+}
+
+div.add-wrapper button,
+div.edit-wrapper button,
+button.trash {
+    border: none;
+    background-color: #0000;
+    color: var(--accent);
+    border-radius: 50%;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+button.trash {
+    padding: 0;
+    background-color: #D00;
+    margin: 0 4px 4px;
+}
+
+button.trash:hover {
+    background-color: #A00;
+}
+
+div.add-wrapper button:hover,
+div.edit-wrapper button:hover {
+    background-color: #0004;
+}
+
+div.add-wrapper button svg {
+    margin-left: -8px;
+}
+
+div.add-wrapper:hover button {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+div.add-wrapper tr,
+div.edit-wrapper tr {
+    height: 24px;
+}
+
+table tr td:first-child {
+    text-align: right;
+}
+
+div.add-wrapper input[type="text"] {
+    width: 240px;
+}
+
+div.edit-wrapper input[type="text"] {
+    width: 220px;
+}
+
+input[type="text"] {
+    color: #FFF;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1.5px solid #FFF;
+    background-color: #0000;
+    transition: all 0.3s ease-out;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+input[type="text"]:focus {
+    border-bottom-width: 1px;
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+input[type="text"]:invalid {
+    border-bottom-color: #D00;
+    box-shadow: none;
+}
+
+img.logo {
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 768px;
+    max-height: 768px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+:root {
+    --border-color: #AAA;
+    --accent: #282;
+}

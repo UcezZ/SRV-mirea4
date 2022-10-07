@@ -1,0 +1,20 @@
+div.navi, form.navi {
+    display: flex;
+}
+
+div.navi a, form.navi input[type=submit] {
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    margin: 8px;
+    cursor: pointer;
+    background-color: antiquewhite;
+    border: 1px solid gainsboro;
+    transition: 0.3s all ease-out;
+}
+
+div.navi a:hover, form.navi input[type=submit]:hover {
+    background-color: blanchedalmond;
+    text-decoration: underline;
+}

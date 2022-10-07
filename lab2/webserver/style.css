@@ -1,0 +1,10 @@
+.terminal {
+    color: #aaa;
+    background-color: #000;
+    font-family: Consolas, 'Lucida console', 'Courier New', Courier, monospace;
+    font-size: 10pt;
+    padding: 4px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    word-wrap: break-word;
+}

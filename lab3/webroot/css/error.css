@@ -1,0 +1,7 @@
+div.errormessage {
+    padding: 8px;
+    margin: 8px;
+    border-radius: 8px;
+    background-color: #FAA;
+    border: 1px solid #800;
+}

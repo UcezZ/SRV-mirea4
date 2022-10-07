@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  webserver:
+    build: webserver/
+    volumes:
+      - ./webserver:/var/www/html
+    ports:
+      - "80:80"
+    depends_on:
+      - mysql
+  mysql:
+    image: mysql:5.7
+    volumes:
+      - ./sqlserver:/docker-entrypoint-initdb.d
+      - srv_lab1_mysql:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpwd
+volumes:
+  srv_lab1_mysql:
