@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "crc-32": "^1.2.2",
+    "express": "^4.18.2",
+    "promised.sqlite": "^0.2.0",
+    "uuid": "^9.0.0"
+  }
+}
