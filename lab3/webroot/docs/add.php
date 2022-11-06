@@ -1,8 +1,10 @@
 <div class="center-wrapper">
     <div class="add-wrapper">
         <form action="/lib/book-add.php" method="POST">
-            <div class="center-wrapper"><button type="submit" title="Добавить книгу" (click)="createContact(newName, newData)" value="">
-                    <img src="./media/add.svg"></button>
+            <div class="center-wrapper">
+                <button type="submit" title="Добавить книгу" (click)="createContact(newName, newData)">
+                    <img src="./media/add.svg">
+                </button>
             </div>
 
             <div class="center-wrapper">
