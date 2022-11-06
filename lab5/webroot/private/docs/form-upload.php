@@ -10,7 +10,7 @@
                 </tr>
                 <tr>
                     <td><?= Locale::getValue('common.name') ?></td>
-                    <td><input id="name" name="name" required minlength="2" maxlength="255" value="<?= $_POST['name'] ?? '' ?>" /></td>
+                    <td><input id="name" name="name" required minlength="2" maxlength="64" value="<?= $_POST['name'] ?? '' ?>" /></td>
                 </tr>
             </table>
             <div class="submit-wrapper">
