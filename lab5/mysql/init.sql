@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS token (
 CREATE TABLE IF NOT EXISTS pdf (
     ID INT NOT NULL AUTO_INCREMENT,
     ID_user INT(11) NOT NULL,
-    name varchar(64),
+    name varchar(128),
     size INT(10) UNSIGNED NOT NULL,
     alias VARCHAR(8) NOT NULL,
     PRIMARY KEY (ID),
