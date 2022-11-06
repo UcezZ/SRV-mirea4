@@ -29,9 +29,6 @@ class FileStream
             header('Content-Description: File Transfer');
             header('Content-Disposition: attachment; filename="' . $downloadName . '"');
         }
-        /*header("Cache-Control: max-age=2592000, public");
-        header("Expires: " . gmdate('D, d M Y H:i:s', time() + 2592000) . ' GMT');
-        header("Last-Modified: " . gmdate('D, d M Y H:i:s', @filemtime($this->path)) . ' GMT');*/
         $this->start = 0;
         $this->size = filesize($this->path);
         $this->end = $this->size - 1;
