@@ -6,7 +6,7 @@ services:
     volumes:
       - ./webroot:/var/www/html
     ports:
-      - "8080:80"
+      - "80:80"
     environment:
       - NGINX_HOST=localhost
       - NGINX_PORT=80
