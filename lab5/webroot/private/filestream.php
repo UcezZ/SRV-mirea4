@@ -102,4 +102,4 @@ class FileStream
         $this->stream();
         $this->end();
     }
-}/* */
+}
