@@ -53,18 +53,19 @@ if (isset($_FILES['file'])) {
 
 <body>
     <?php
-    include __DIR__ . '/private/docs/header.php';
+    require __DIR__ . '/private/docs/header.php';
     ?>
     <div class="main">
         <?php
         if (isset($errorMessage)) {
             $errorCaption = Locale::getValue('error.upload'); //'Ошибка загрузки';
             require __DIR__ . '/private/docs/card-error.php';
+            require __DIR__ . '/private/docs/form-upload.php';
         } else if (isset($pdf)) {
             $successCaption = Locale::getValue('success.upload'); //'Файл успешно загружен';
             require __DIR__ . '/private/docs/card-success-upload.php';
         } else {
-            include __DIR__ . '/private/docs/form-upload.php';
+            require __DIR__ . '/private/docs/form-upload.php';
         }
         ?>
     </div>
