@@ -1,0 +1,135 @@
+div.card-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+div.card-wrapper.flex-wrap,
+div.card-wrapper.flex-wrap div.card-contents,
+div.card-wrapper.flex-wrap div.card-wrapper {
+    flex-wrap: wrap;
+}
+
+div.card-wrapper div.card table.card-contents th {
+    color: var(--card-param-color);
+}
+
+div.card-wrapper.column {
+    flex-direction: column;
+}
+
+div.card-wrapper div.card {
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px 2px #0008;
+    border-color: var(--accent-background);
+    margin: 16px;
+    overflow: hidden;
+    display: table;
+}
+
+div.card-wrapper div.card div.card-header {
+    font-family: ProductSans;
+    background-color: var(--accent-background);
+    color: var(--menu-forecolor);
+    border-bottom-color: var(--card-border-color);
+    border-bottom-style: double;
+    font-size: 24pt;
+    padding: 8px;
+    text-align: center;
+    cursor: default;
+    word-break: break-word;
+    position: relative;
+}
+
+div.card-wrapper div.card .card-contents {
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: default;
+    color: var(--body-forecolor);
+}
+
+div.card-wrapper div.card table.card-contents tr td {
+    padding: 8px;
+}
+
+div.card-wrapper div.card table.card-contents tr td a {
+    color: inherit;
+}
+
+div.card-wrapper div.card table.card-contents tr td a:hover {
+    color: var(--card-param-hover-link);
+}
+
+div.card-wrapper div.card table.card-contents tr td:first-child {
+    text-align: right;
+    border-right-color: var(--card-border-color);
+    border-right-width: 1px;
+    border-right-style: solid;
+    color: var(--card-param-color);
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+div.card-wrapper div.card table.card-contents tr td:nth-child(2) {
+    text-align: left;
+    word-break: break-word;
+}
+
+div.card-wrapper div.card .card-footer {
+    display: flex;
+}
+
+div.card-wrapper div.card .card-footer a {
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease-out;
+}
+
+div.card-wrapper div.card .card-footer a,
+div.card-wrapper div.card .card-footer input[type="button"] {
+    background-color: var(--accent-background);
+    color: var(--body-forecolor);
+    font-family: ProductSans;
+    border: none;
+    font-size: 20pt;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 8px;
+    flex: 1;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px 0 var(--shadow-color);
+}
+
+div.card-wrapper div.card .card-contents input[type="submit"]:hover,
+div.card-wrapper div.card .card-footer a:hover,
+div.card-wrapper div.card .card-footer button:hover {
+    text-shadow: 1px 1px 2px var(--shadow-color);
+    color: var(--profile-hover-color);
+}
+
+div.card-wrapper div.card .card-contents input[type="submit"]:active,
+div.card-wrapper div.card .card-footer a:active,
+div.card-wrapper div.card .card-footer button:active {
+    transform: translateX(1px) translateY(1px);
+    text-shadow: 0 0 2px 0 var(--shadow-color);
+    transform: translateX(1px) translateY(1px);
+    box-shadow: 0 0 2px 0 var(--shadow-color);
+}
+
+div.card-wrapper div.card .card-contents input[type="submit"],
+div.card-wrapper div.card .card-footer a,
+div.card-wrapper div.card .card-footer button {
+    background-color: var(--accent-background);
+    color: var(--menu-forecolor);
+    font-family: ProductSans;
+    border: none;
+    font-size: 20pt;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 8px;
+    flex: 1;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px 0 var(--shadow-color);
+    text-align: center;
+}

@@ -1,0 +1,12 @@
+div.main {
+    margin-top: 128px;
+    text-align: center;
+}
+
+div.main::before {
+    content: '<to be implemented/>';
+    font-size: 52pt;
+    font-family: Consolas, Consola, 'Courier New', Courier, monospace;
+    color: #CCC;
+    font-weight: bold;
+}

@@ -1,0 +1,53 @@
+a.big-green-button {
+    background-color: var(--accent-background);
+    color: var(--menu-forecolor);
+    font-family: ProductSans;
+    border-radius: 96px;
+    width: 192px;
+    height: 192px;
+    box-shadow: 1px 1px 4px 2px var(--shadow-color);
+    border: solid 1px var(--accent-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.3s ease-out;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 16px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+a.big-green-button:hover {
+    border-radius: 8px;
+    transform: scale(1.1);
+}
+
+a.big-green-button:active {
+    transform: translateX(1px) translateY(1px);
+    box-shadow: 0 0 4px 2px var(--shadow-color);
+}
+
+a.big-green-button:hover span {
+    transform: translateY(-8px);
+}
+
+a.big-green-button span {
+    font-size: 18px;
+    transform: translateY(24px);
+    transition: inherit;
+}
+
+a.big-green-button.add-car-icon {
+    background-image: url('./../media/icons/add-car-icon.svg');
+}
+
+a.big-green-button.add-service-icon {
+    background-image: url('./../media/icons/add-service-icon.svg');
+}
+
+a.big-green-button.add-pdf-icon {
+    background-image: url('./../media/icons/pdf-add.svg');
+}

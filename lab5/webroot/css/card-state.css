@@ -1,0 +1,29 @@
+div.card-wrapper.error div.card {
+    border-color: var(--card-border-error);
+}
+
+div.card-wrapper.error div.card div.card-header {
+    background-color: var(--card-header-error);
+    border-bottom-color: var(--card-border-error);
+}
+
+div.card-wrapper.success div.card {
+    border-color: var(--card-border-success);
+}
+
+div.card-wrapper.success div.card div.card-header {
+    background-color: var(--card-header-success);
+    border-bottom-color: var(--card-border-success);
+}
+
+div.card-wrapper div.card-contents {
+    padding: 8px;
+    text-align: center;
+}
+
+:root {
+    --card-header-error: #D80;
+    --card-border-error: #A60;
+    --card-header-success: #2A0;
+    --card-border-success: #070;
+}

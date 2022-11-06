@@ -1,0 +1,148 @@
+div.card-wrapper div.card form table.card-contents {
+    border-bottom-color: var(--card-border-color);
+    border-bottom-style: double;
+    width: 100%;
+}
+
+div.card-wrapper div.card form {
+    margin: 0;
+    padding: 0;
+}
+
+div.card-wrapper div.card form table.card-contents td:nth-child(2) {
+    display: flex;
+}
+
+div.card-wrapper div.card form table.card-contents input,
+div.card-wrapper div.card form table.card-contents select,
+div.card-wrapper div.card form table.card-contents textarea {
+    flex: 1;
+    min-width: 240px;
+    font-size: inherit;
+    font-family: inherit;
+    border: none;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--card-border-color);
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s ease-out;
+}
+
+div.card-wrapper div.card form table.card-contents input {
+    padding: 2px 6px;
+    background-color: var(--input-background-color);
+    color: var(--body-forecolor);
+}
+
+div.card-wrapper div.card form table.card-contents select {
+    cursor: pointer;
+    appearance: none;
+    padding: 2px;
+    width: 100%;
+}
+
+div.card-wrapper div.card form table.card-contents td.select-wrapper::after {
+    position: absolute;
+    content: 'v';
+    transform: scaleX(1.1) scaleY(0.6) translateX(-16px) translateY(4px);
+    color: var(--input-border-color-active);
+}
+
+div.card-wrapper div.card form table.card-contents textarea {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: var(--card-border-color);
+    resize: vertical;
+    min-height: 120px;
+    padding: 2px 6px;
+    width: unset;
+}
+
+div.card-wrapper div.card form table.card-contents textarea:focus {
+    border-bottom-width: 1.5px;
+    border-bottom-color: var(--input-border-color-active);
+    border-top-width: 1.5px;
+    border-top-color: var(--input-border-color-active);
+}
+
+div.card-wrapper div.card form table.card-contents input[type="number"] {
+    appearance: textfield;
+}
+
+div.card-wrapper div.card form table.card-contents input:focus,
+div.card-wrapper div.card form table.card-contents select:focus,
+div.card-wrapper div.card form table.card-contents textarea:focus {
+    border-bottom-width: 1.5px;
+    border-bottom-color: var(--input-border-color-active);
+}
+
+div.card-wrapper div.card form div.submit-wrapper {
+    display: flex;
+}
+
+div.card-wrapper div.card div.card-contents {
+    display: flex;
+    flex-direction: column;
+}
+
+div.card-wrapper div.card form div.submit-wrapper button,
+div.card-wrapper div.card div.card-contents a {
+    background-color: var(--accent-background);
+    color: var(--menu-forecolor);
+    font-family: ProductSans;
+    border: none;
+    font-size: 20pt;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 8px;
+    flex: 1;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px 0 var(--shadow-color);
+    text-align: center;
+}
+
+div.card-wrapper div.card div.card-contents a {
+    text-decoration: none;
+}
+
+div.card-wrapper div.card form div.submit-wrapper button:hover,
+div.card-wrapper div.card div.card-contents a:hover {
+    text-shadow: 1px 1px 2px var(--shadow-color);
+    color: var(--profile-hover-color);
+}
+
+
+div.card-wrapper div.card form div.submit-wrapper button:active,
+div.card-wrapper div.card div.card-contents a:active {
+    transform: translateX(1px) translateY(1px);
+    text-shadow: 0 0 2px 0 var(--shadow-color);
+    transform: translateX(1px) translateY(1px);
+    box-shadow: 0 0 2px 0 var(--shadow-color);
+}
+
+div.card-wrapper div.card form table.card-contents input:invalid,
+div.card-wrapper div.card form table.card-contents select:invalid,
+div.card-wrapper div.card form table.card-contents textarea:invalid {
+    border: none;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: var(--input-border-color-invalid);
+    box-shadow: none;
+}
+
+div.card-wrapper div.card form table.card-contents textarea:invalid {
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: var(--input-border-color-invalid);
+}
+
+@media (max-width: 400px) {
+
+    div.card-wrapper div.card form table.card-contents input,
+    div.card-wrapper div.card form table.card-contents select,
+    div.card-wrapper div.card form table.card-contents textarea {
+        min-width: 160px;
+    }
+}

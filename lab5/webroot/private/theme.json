@@ -1,0 +1,8 @@
+{
+    "dark": {
+        "css": "./css/theme/dark.css"
+    },
+    "light": {
+        "css": "./css/theme/light.css"
+    }
+}
