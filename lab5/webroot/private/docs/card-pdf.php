@@ -1,5 +1,5 @@
 <div class="card">
-    <div class="card-header"><?= isset($userprofile) ? $userprofile->getLogin() : $user->getLogin() . ' #' . $pdf->getId() ?>
+    <div class="card-header"><?= (isset($userprofile) ? $userprofile->getLogin() : $user->getLogin()) . ' #' . $pdf->getId() ?>
         <form class="remove-pdf toggle-wrapper" method="POST" action="./pdf-remove.php">
             <input type="hidden" name="f" value="<?= $pdf->getAlias() ?>" />
             <span class="centerer-wrapper"><?= Locale::getValue('file.confirmdelete') ?></span>

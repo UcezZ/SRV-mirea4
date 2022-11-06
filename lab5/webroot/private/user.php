@@ -59,7 +59,7 @@ class User
 
         if (SQL::runQuery(
             "INSERT INTO user (login, pwdcrc, locale) VALUES (?, ?, ?)",
-            'si',
+            'sis',
             $login,
             $pwdhash,
             Locale::parseBrowserLocale()
