@@ -18,6 +18,7 @@ div.card-wrapper div.card form table.card-contents select,
 div.card-wrapper div.card form table.card-contents textarea {
     flex: 1;
     min-width: 240px;
+    max-width: 400px;
     font-size: inherit;
     font-family: inherit;
     border: none;
