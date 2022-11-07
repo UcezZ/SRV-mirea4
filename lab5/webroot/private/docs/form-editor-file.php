@@ -9,7 +9,7 @@
             <tr>
                 <td><?= Locale::getValue('common.name') ?></td>
                 <td>
-                    <input type="text" name="name" value="" required>
+                    <input type="text" name="name" value="<?= $pdf->getName() ?>" required>
                 </td>
             </tr>
         </table>
