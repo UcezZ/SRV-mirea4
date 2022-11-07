@@ -20,7 +20,9 @@ class Locale
                 return $locale;
             }
         }
-        $user = User::getUser();
+        if (isset($_COOKIE['token'])) {
+            $user = User::getUser();
+        }
         return Locale::gatherLocale(isset($user) ? $user->getLocale() : Locale::parseBrowserLocale());
     }
 

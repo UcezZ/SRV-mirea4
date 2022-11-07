@@ -124,16 +124,14 @@ class User
 
     public static function getUser()
     {
-        if (isset($_COOKIE['token'])) {
-            if ($stmt = SQL::runQuery(
-                'SELECT user.* FROM user JOIN token ON user.ID = token.ID_User AND token.value = ?',
-                's',
-                $_COOKIE['token']
-            )) {
-                if ($row = SQL::sqlResultFirstRow($stmt)) {
-                    $user = new User($row);
-                    return $user;
-                }
+        if ($stmt = SQL::runQuery(
+            'SELECT user.* FROM user JOIN token ON user.ID = token.ID_User AND token.value = ?',
+            's',
+            $_COOKIE['token']
+        )) {
+            if ($row = SQL::sqlResultFirstRow($stmt)) {
+                $user = new User($row);
+                return $user;
             }
         }
     }

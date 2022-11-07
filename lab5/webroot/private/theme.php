@@ -22,8 +22,10 @@ class Theme
                 return 'dark';
             }
         }
-        $user = User::getUser();
-        return Theme::gatherTheme($user ? $user->getTheme() : 'dark');
+        if (isset($_COOKIE['token'])) {
+            $user = User::getUser();
+        }
+        return Theme::gatherTheme(isset($user) ? $user->getTheme() : 'dark');
     }
 
     public static function getLink()
