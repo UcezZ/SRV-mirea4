@@ -1,0 +1,78 @@
+.toggle-wrapper input[type="checkbox"] {
+    display: none;
+}
+
+.toggle-wrapper label {
+    display: block;
+    width: 40px;
+    height: 20px;
+    border: 3px solid;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle-wrapper label span {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle-wrapper input[type="checkbox"]~label {
+    color: var(--toggle-inactive-color);
+    border-color: var(--toggle-inactive-color);
+}
+
+.toggle-wrapper input[type="checkbox"]~label span {
+    background: var(--toggle-inactive-color);
+}
+
+.toggle-wrapper input[type="checkbox"]:checked~label {
+    color: var(--toggle-active-color);
+    border-color: var(--toggle-active-color);
+}
+
+.toggle-wrapper input[type="checkbox"]:checked~label span {
+    background: var(--toggle-active-color);
+    left: 22px;
+}
+
+.toggle-wrapper label.invalid {
+    animation: shake 0.33s ease-out;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    14.28% {
+        transform: translateX(12px);
+    }
+
+    28.57% {
+        transform: translateX(-12px);
+    }
+
+    42.85% {
+        transform: translateX(6px);
+    }
+
+    57.14% {
+        transform: translateX(-6px);
+    }
+
+    71.42% {
+        transform: translateX(3px);
+    }
+
+    85.71% {
+        transform: translateX(-3px);
+    }
+}
