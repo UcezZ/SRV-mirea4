@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'ProductSans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./productsans.woff);
+    src: url(./productsans.woff2);
+    src: url(./productsans.eot);
+    src: url(./productsans.otf);
+    src: url(./productsans.svg);
+    src: url(./productsans.ttf);
+}

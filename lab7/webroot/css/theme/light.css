@@ -1,0 +1,24 @@
+:root {
+    --accent-background: #584;
+    --auth-button-background-hover: #EFE;
+    --shadow-color: #0008;
+    --profile-hover-color: #FF8;
+    --body-background: #FFF;
+    --body-forecolor: #000;
+    --accent-background-burger-even: #6a8f5ff0;
+    --accent-background-burger-noteven: #69a74cf0;
+    --menu-forecolor: #EEE;
+
+    --card-border-color: #242;
+    --card-param-color: #444;
+    --card-param-hover-link: var(--accent-background);
+
+    --input-border-color-active: #888;
+    --input-border-color-invalid: #F22;
+    --input-border-color-valid: #4A4;
+    --input-background-color: var(--menu-forecolor);
+
+
+    --toggle-inactive-color: #AAA;
+    --toggle-active-color: var(--accent-background);
+}

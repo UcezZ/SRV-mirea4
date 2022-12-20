@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    background-color: var(--body-background);
+    color: var(--body-forecolor);
+}
+
+.centerer-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.centerer-wrapper.row {
+    flex-direction: row !important;
+}
+
+div.header {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--accent-background);
+    color: var(--menu-forecolor);
+    min-height: 48px;
+    box-shadow: 1px 1px 2px 0 var(--shadow-color);
+}
+
+div.header div.logo-caption span {
+    font-weight: 100;
+    font-size: 18pt;
+    margin: 8px;
+}
+
+div.header div.logo-caption,
+div.header div.header-caption,
+div.header div.auth-block {
+    flex: 1;
+}
+
+div.header div.header-caption {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24pt;
+    flex: 1;
+    text-align: center;
+    text-size-adjust: 110%;
+}
+
+div.header div.auth-block,
+div.header div.logo-caption,
+div.header div.menu-wrapper div.menu {
+    font-family: ProductSans;
+}
+
+div.header div.auth-block,
+div.header div.auth-block {
+    justify-content: flex-end;
+}
+
+div.header div.auth-block,
+div.header div.auth-block div.auth-buttons {
+    display: flex;
+}
+
+div.header div.auth-block span.profile {
+    font-size: 20px;
+    margin: 4px;
+    cursor: pointer;
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+div.header div.auth-block div.profile-icon::before {
+    content: url('./../media/icons/profile-icon.svg');
+    padding-top: 4px;
+}
+
+div.header div.auth-block a,
+div.header div.menu-wrapper div.menu a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    padding: 4px;
+}
+
+div.header div.auth-block div.auth-buttons a {
+    margin: 4px;
+    color: var(--accent-background);
+    background-color: var(--menu-forecolor);
+    border-radius: 4px;
+    min-width: 80px;
+    text-align: center;
+    box-shadow: 1px 1px 2px 0 var(--shadow-color);
+}
+
+div.header div.auth-block span.profile a,
+div.header div.logo-caption a,
+div.header div.menu-wrapper div.menu a {
+    text-decoration: none;
+    color: var(--menu-forecolor);
+    text-shadow: 1px 1px 2px var(--shadow-color);
+}
+
+div.header div.auth-block span.profile a:hover,
+div.header div.logo-caption a:hover,
+div.header div.menu-wrapper div.menu a:hover,
+div.header div.menu-wrapper div.menu a.selected {
+    color: var(--profile-hover-color);
+}
+
+div.header div.auth-block div.auth-buttons a:hover {
+    background-color: var(--auth-button-background-hover);
+}
+
+div.header div.auth-block div.auth-buttons a:active {
+    transform: translateX(1px) translateY(1px);
+    box-shadow: 0 0 2px 0 var(--shadow-color);
+}
+
+div.header div.menu-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+div.header div.menu-wrapper div.menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    color: var(--menu-forecolor);
+}
+
+div.header div.menu-wrapper div.menu a {
+    font-size: 14pt;
+    font-weight: lighter;
+}
+
+div.header div.menu-wrapper div.menu a.selected {
+    font-weight: bold;
+}
+
+.flex-column {
+    flex-flow: column;
+}
+
+div.header input#burger-toggle,
+div.header label.burger-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    div.header label.burger-toggle {
+        display: block;
+    }
+
+    div.header .burger-toggle span {
+        display: block;
+        border-radius: 10px;
+        border: var(--menu-forecolor) solid 1px;
+        background-color: var(--menu-forecolor);
+        width: 36px;
+        height: 3px;
+        margin: 6px;
+        transition: all 0.2s ease-out;
+    }
+
+    div.header label.burger-toggle span {
+        position: relative;
+        top: 0px;
+    }
+
+    div.header label.burger-toggle span:first-child {
+        margin-top: 10px;
+    }
+
+    div.header input#burger-toggle:checked~label.burger-toggle span:first-child {
+        top: 12px;
+        transform: rotate(45deg);
+    }
+
+    div.header input#burger-toggle:checked~label.burger-toggle span:nth-child(2) {
+        opacity: 0;
+    }
+
+    div.header input#burger-toggle:checked~label.burger-toggle span:nth-child(3) {
+        top: -10px;
+        transform: rotate(-45deg);
+    }
+
+    div.header input#burger-toggle:checked~div.menu-wrapper div.menu {
+        left: 0%;
+    }
+
+    div.header div.menu-wrapper {
+        flex: 1;
+    }
+
+    div.header div.menu-wrapper div.menu {
+        flex-direction: column;
+        position: absolute;
+        top: 48px;
+        left: -100%;
+        padding: 0;
+        overflow: hidden;
+        width: 100%;
+        transition: 0.3s all ease-out;
+    }
+
+    div.header div.menu-wrapper div.menu a {
+        padding: 8px;
+    }
+
+    div.header div.menu-wrapper div.menu a:nth-child(2n) {
+        background-color: var(--accent-background-burger-even);
+    }
+
+    div.header div.menu-wrapper div.menu a:nth-child(2n+1) {
+        background-color: var(--accent-background-burger-noteven);
+    }
+
+    div.header div.auth-block div.auth-buttons a {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 540px) {
+    div.header div.auth-block span.profile {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 460px) {
+    div.header div.auth-block span.profile {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 400px) {
+    div.header div.auth-block span.profile {
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 360px) {
+    div.header div.auth-block span.profile {
+        display: none;
+    }
+}

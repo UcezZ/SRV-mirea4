@@ -1,0 +1,10 @@
+div.card.big {
+    flex: 1;
+}
+
+div.card.big>div.card-header {
+    border-bottom-style: solid !important;
+    border-bottom-width: 1.5px;
+    text-align: left !important;
+    padding-left: 16px !important;
+}
