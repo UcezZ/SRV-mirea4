@@ -2,7 +2,7 @@
     <div class="add-wrapper">
         <form action="/lib/book-add.php" method="POST">
             <div class="center-wrapper">
-                <button type="submit" title="Добавить книгу" (click)="createContact(newName, newData)">
+                <button type="submit" title="Добавить книгу">
                     <img src="./media/add.svg">
                 </button>
             </div>
