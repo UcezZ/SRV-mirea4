@@ -10,15 +10,15 @@
             <div class="center-wrapper">
                 <table>
                     <tr>
-                        <td>Название: </td>
+                        <td>Название:</td>
                         <td><input type="text" name="name" placeholder="Заполните это поле" required /></td>
                     </tr>
                     <tr>
-                        <td>Автор: </td>
+                        <td>Автор:</td>
                         <td><input type="text" name="author" placeholder="Заполните это поле" required /></td>
                     </tr>
                     <tr>
-                        <td>Обложка: </td>
+                        <td>Обложка:</td>
                         <td><input type="text" name="url" placeholder="Введите ссылку" /></td>
                     </tr>
                 </table>
