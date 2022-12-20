@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__ . '/sql.php';
-require_once __DIR__ . '/filestream.php';
+require_once __DIR__ . '/../core/sql.php';
+require_once __DIR__ . '/../core/filestream.php';
 
 class PDF
 {
@@ -81,7 +81,7 @@ class PDF
 
     public function getPath()
     {
-        return $this->pathOverride ?? __DIR__ . '/files/' . $this->getAlias() . '.pdf';
+        return $this->pathOverride ?? __DIR__ . '/../files/' . $this->getAlias() . '.pdf';
     }
 
     public function sendStream()

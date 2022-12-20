@@ -141,7 +141,7 @@ class GDWrapper
         $width = imagesx($image);
         $height = imagesy($image);
 
-        $overlay = imagecreatefrompng(__DIR__ . '/../media/watermark.png');
+        $overlay = imagecreatefrompng(__DIR__ . '/../../media/watermark.png');
         $overlaywidth = imagesx($overlay);
         $overlayheight = imagesy($overlay);
 
